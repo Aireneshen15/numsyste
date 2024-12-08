@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Converter</title>
+    <link rel="stylesheet" href="numsys.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Number System Converter</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="rin.html">Home</a></li>
+                <li><a href="rin.html">About</a></li>
+                <li><a href="rin.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="converter-container">
+            <h2>Enter a value in any number system to convert:</h2>
+            <form>
+                <label for="decimal">Decimal:</label>
+                <input type="text" id="decimal" oninput="convert('decimal')">
+
+                <label for="binary">Binary:</label>
+                <input type="text" id="binary" oninput="convert('binary')">
+
+                <label for="octal">Octal:</label>
+                <input type="text" id="octal" oninput="convert('octal')">
+
+                <label for="hexadecimal">Hexadecimal:</label>
+                <input type="text" id="hexadecimal" oninput="convert('hexadecimal')">
+            </form>
+        </div>
+    </main>
+    <script src="numsys.js"></script>
+</body>
+</html>
